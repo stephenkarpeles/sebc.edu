@@ -1,0 +1,40 @@
+.btn {
+  display: inline-block; 
+  padding: 16px 18px;
+  border: 3px solid $main-gray;
+  text-transform: uppercase;
+  font-family: 'Gothic-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: $main-gray;
+  text-decoration: none;
+  cursor: pointer;
+  @include transition-duration(.4s);
+  &:hover {
+    color: white;
+    background: $gold;
+    border: 3px solid $main-gray;
+    text-decoration: none; } }
+
+.btn.btn-alt {
+  font-size: 18px; }
+
+.btn-footer {
+  margin-top: 0;
+  font-size: 14px;
+  padding: 16px 13px; 
+  @include breakpoint($bp1) {
+    margin-top: 4px;
+    font-size: 13px;
+    padding: 14px 12px; }
+  @include breakpoint($bp2) {
+    margin-top: 0;
+    font-size: 15px;
+    padding: 16px 13px; } }
+
+.btn-white {
+  color: white;
+  border: 3px solid white;
+  &:hover {
+    background: $mid-red;
+    border: 3px solid white; } }

@@ -1,0 +1,68 @@
+header {
+  text-align: center; }
+
+.header-bar {
+  height: 70px;
+  background: $dark-red; }
+
+.logo-torch-wrap {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 100;
+  margin-left: -36px; /* Negative value of half the width of .logo-torch-box */ }
+
+.logo-torch-box {
+  height: 92px;
+  width: 72px;
+  padding-top: 14px;
+  text-align: center;
+  background: $mid-red; }
+
+.hero-wrap-home,
+.hero-wrap-lookbook,
+.hero-wrap-counseling,
+.hero-wrap-childrens-ministry,
+.hero-wrap-youth-ministry,
+.hero-wrap-elementary-education {
+  width: 100%;
+  padding: 40px 0 100px;
+  background-size: cover;
+  background-position: center top;
+  @include breakpoint($bp1) {
+    padding: 40px 0 200px;
+    background-attachment: fixed; } }
+
+.hero-wrap-home {  
+  background-image: url(../img/banner-pastor-675x650.jpg);
+  @include breakpoint($bp1) {
+    background-image: url(../img/banner-pastor-1400x900.jpg); } } 
+
+.hero-wrap-lookbook {  
+  background-image: url(../img/banner-lookbook-675x650.jpg);
+  @include breakpoint($bp1) {
+    padding: 40px 0 180px;
+    background-image: url(../img/banner-lookbook-1400x900.jpg); } } 
+
+.hero-wrap-counseling {  
+  background-image: url(../img/banner-counseling-675x650.jpg);
+  @include breakpoint($bp1) {
+    background-image: url(../img/banner-counseling-1400x900.jpg); } }
+
+.hero-wrap-childrens-ministry {  
+  background-image: url(../img/banner-childrens-ministry-675x650.jpg);
+  @include breakpoint($bp1) {
+    background-image: url(../img/banner-childrens-ministry-1400x900.jpg); } }
+
+.hero-wrap-youth-ministry {  
+  background-image: url(../img/banner-youth-ministry-675x650.jpg);
+  background-position: left top;
+  @include breakpoint($bp1) {
+    background-image: url(../img/banner-youth-ministry-1400x900.jpg); } }
+
+.hero-wrap-elementary-education {  
+  background-position: left top;
+  background-image: url(../img/banner-elementary-education-675x650.jpg);
+  @include breakpoint($bp1) {
+    background-position: center top;
+    background-image: url(../img/banner-elementary-education-1400x900.jpg); } }
